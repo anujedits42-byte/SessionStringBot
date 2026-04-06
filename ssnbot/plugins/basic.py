@@ -46,7 +46,6 @@ async def about(bot: Client, msg: Message):
     await bot.send_message(
         msg.chat.id,
         Data.ABOUT,
-        # disable_web_page_preview=True,
-        link_preview_options=LinkPreviewOptions(is_disabled=True),
+        disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(Data.home_buttons),
     )
