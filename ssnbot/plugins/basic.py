@@ -1,6 +1,6 @@
 from data import Data
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, Message
+from pyrogram.types import InlineKeyboardMarkup, Message, LinkPreviewOptions
 from ssnbot.db.sql import add_user, query_msg
 
 
@@ -14,16 +14,19 @@ async def start(bot: Client, msg: Message):
     id = msg.from_user.id
     user_name = '@' + msg.from_user.username if msg.from_user.username else None
     await add_user(id, user_name)   
-
     user = await bot.get_me()
     mention = user.mention
+    await bot.send_message(
+        msg.chat.id,
+        Data.START.format(msg.from_user.mention, mention),
 
-    text = Data.START.format(msg.from_user.mention, mention)
-
-    await bot.send_photo(
-        chat_id=msg.chat.id,
-        photo=Data.START_PIC,
-        caption=text,
+        await bot.send_photo(
+    chat_id=msg.chat.id,
+    photo=Data.START_PIC,
+    caption=text,
+    reply_markup=InlineKeyboardMarkup(Data.buttons)
+    )
+        
         reply_markup=InlineKeyboardMarkup(Data.buttons)
     )
 
@@ -46,6 +49,7 @@ async def about(bot: Client, msg: Message):
     await bot.send_message(
         msg.chat.id,
         Data.ABOUT,
-        disable_web_page_preview=True,
+        # disable_web_page_preview=True,
+        link_preview_options=LinkPreviewOptions(is_disabled=True),
         reply_markup=InlineKeyboardMarkup(Data.home_buttons),
     )
