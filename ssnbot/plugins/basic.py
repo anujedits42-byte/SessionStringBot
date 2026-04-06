@@ -14,17 +14,16 @@ async def start(bot: Client, msg: Message):
     id = msg.from_user.id
     user_name = '@' + msg.from_user.username if msg.from_user.username else None
     await add_user(id, user_name)   
+
     user = await bot.get_me()
     mention = user.mention
-    await bot.send_message(
-        msg.chat.id,
-        Data.START.format(msg.from_user.mention, mention),
-        
-        await bot.send_photo(
+
+    text = Data.START.format(msg.from_user.mention, mention)
+
+    await bot.send_photo(
         chat_id=msg.chat.id,
-        photo=Data.START_PIC,  # 👈 image yaha se aayegi
+        photo=Data.START_PIC,
         caption=text,
-            
         reply_markup=InlineKeyboardMarkup(Data.buttons)
     )
 
