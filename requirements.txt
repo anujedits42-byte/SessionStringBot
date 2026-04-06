@@ -5,3 +5,4 @@ Telethon
 git+https://github.com/rahulps1000/pyropatch.git@pyrotgfork
 TgCrypto
 uvloop
+flask
