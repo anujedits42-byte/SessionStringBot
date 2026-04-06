@@ -13,27 +13,28 @@ class Data:
 
     buttons = [
         generate_single_button,
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/ELUpdates/8")],
+        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/log_channel_a")],
         [
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/ELUpdates")],
+        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/log_channel_a")],
     ]
 
     START = """
-**Hey {}
+**Hᴇʏ {}
 
-Welcome to {}
+Wᴇʟᴄᴏᴍᴇ ᴛᴏ {}
 
-If you don't trust this bot, 
-> Please stop reading this message
-> Delete this chat
+Iꜰ ʏᴏᴜ ᴅᴏɴ'ᴛ ᴛʀᴜsᴛ ᴛʜɪs ʙᴏᴛ,  
+> Pʟᴇᴀsᴇ sᴛᴏᴘ ʀᴇᴀᴅɪɴɢ ᴛʜɪs ᴍᴇssᴀɢᴇ
+> Dᴇʟᴇᴛᴇ ᴛʜɪs ᴄʜᴀᴛ
 
-Still reading?
-You can use me to generate Pyrogram and Telethon string session. Use below buttons to learn more !
 
-By @ELUpdates**
+Sᴛɪʟʟ ʀᴇᴀᴅɪɴɢ?
+Yᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ Pʏʀᴏɢʀᴀᴍ ᴀɴᴅ Tᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ. Usᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs ᴛᴏ ʟᴇᴀʀɴ ᴍᴏʀᴇ !
+
+Bʏ @Aɴᴜᴊᴇᴅɪᴛs𝟽𝟼**
     """
 
     HELP = """
@@ -52,11 +53,11 @@ By @ELUpdates**
 
 Telegram Bot to generate Pyrogram and Telethon string session by @ELUpdates
 
-Source Code : [Click Here](https://github.com/EL-Coders/SessionStringBot)
+Source Code : [Click Here](https://files.catbox.moe/tdiszo.jpg)
 
 Framework : [Pyrogram](https://docs.pyrogram.org)
 
 Language : [Python](https://www.python.org)
 
-Developer : @CoderELAlpha
+Developer : @anujedits76
     """
