@@ -1,8 +1,8 @@
 python-dotenv
 SQLAlchemy
-psycopg2
+psycopg2-binary
 Telethon
-git+https://github.com/rahulps1000/pyropatch.git@pyrotgfork
-pyrotgfork
+git+
+pyrotgforkhttps://github.com/anujedits42-byte/pyropatch.git@pyrotgfork
 TgCrypto
 uvloop
