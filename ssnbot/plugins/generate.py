@@ -269,7 +269,7 @@ async def generate_session(
 
     await bot.send_message(
         msg.chat.id,
-        "Successfully generated {} string session. \n\nPlease check your saved messages! \n\nBy @log_channel_a".format(
+        "Successfully generated {} string session. \n\nPlease check your saved messages! \n\nBy @anujedits76".format(
             "telethon" if telethon else "pyrogram"
         ),
     )
