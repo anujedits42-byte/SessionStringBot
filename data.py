@@ -21,6 +21,9 @@ class Data:
         [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/log_channel_a")],
     ]
 
+# 📸 Image URL for Start
+    START_PIC = "https://files.catbox.moe/fgc2ou.jpg"
+    
     START = """
 **Hᴇʏ {}
 
