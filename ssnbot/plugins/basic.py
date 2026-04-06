@@ -19,6 +19,12 @@ async def start(bot: Client, msg: Message):
     await bot.send_message(
         msg.chat.id,
         Data.START.format(msg.from_user.mention, mention),
+        
+        await bot.send_photo(
+        chat_id=msg.chat.id,
+        photo=Data.START_PIC,  # 👈 image yaha se aayegi
+        caption=text,
+            
         reply_markup=InlineKeyboardMarkup(Data.buttons)
     )
 
