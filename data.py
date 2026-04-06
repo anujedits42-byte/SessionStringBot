@@ -51,7 +51,7 @@ Bʏ @Aɴᴜᴊᴇᴅɪᴛs𝟽𝟼**
     ABOUT = """
 **About This Bot** 
 
-Telegram Bot to generate Pyrogram and Telethon string session by @ELUpdates
+Telegram Bot to generate Pyrogram and Telethon string session by @anujedits76
 
 Source Code : [Click Here](https://files.catbox.moe/tdiszo.jpg)
 
