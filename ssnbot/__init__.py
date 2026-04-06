@@ -12,7 +12,7 @@ pattern = re.compile(r"^.\d+$")
 APP_ID = os.environ.get("APP_ID", "34446649")
 API_HASH = os.environ.get("API_HASH", "8dc570c08d8e35e88fb9bfc73c65d7fa")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8772312754:AAEken-freWxFhAHuVZ8iRsUT_oerjz3fT8")
-DB_URL = os.environ.get("DB_URL", os.environ.get("DATABASE_URL", "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0"))
+DB_URL = os.environ.get("DB_URL", os.environ.get("DATABASE_URL", ""))
 OWNER_ID = int(os.environ.get('OWNER_ID', "7892805795"))
 MUST_JOIN = os.environ.get("MUST_JOIN", "-1003515041061")
 ADMINS = [
