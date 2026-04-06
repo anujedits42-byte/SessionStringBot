@@ -1,6 +1,6 @@
 from ssnbot import MUST_JOIN
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message, LinkPreviewOptions
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Messages
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
 
 
@@ -21,7 +21,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 await msg.reply(
                     f"You must join [this channel]({link}) to use me. After joining try again !",
                     # disable_web_page_preview=True,
-                    link_preview_options=LinkPreviewOptions(is_disabled=True),
+                    disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("✨ Join Channel ✨", url=link)]
                     ])
